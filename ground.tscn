@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bh2nf4yorp6m0"]
+
+[ext_resource type="Texture2D" uid="uid://coyidyao4h81y" path="res://kenney_scribble-platformer (1)/PNG/Default/tile.png" id="1_cd1nh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ij5pm"]
+size = Vector2(62, 61)
+
+[node name="Ground" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_cd1nh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_ij5pm")
